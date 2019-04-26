@@ -1,5 +1,5 @@
 
-function visualizer(oggetto){
+function visualizer(){
 let squircle;
 let xPrec;
 let yPrec;
@@ -8,7 +8,7 @@ let yRot;
 let delta;
 
 function preload(){
-	squircle=loadModel(oggetto, true);
+	squircle=loadModel(document.getElementById("object").value, true);
 }
 
 function setup(){
