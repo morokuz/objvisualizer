@@ -6,7 +6,7 @@ let yRot;
 let delta;
 
 function preload(){
-	squircle=loadModel("../assets/monkey.obj", true);
+	squircle=loadModel("assets/untitled.obj", true);
 }
 
 function setup(){
@@ -19,7 +19,7 @@ function setup(){
 
 
 function draw(){
-	background(200);
+	background(40);
 	scale(2);
 	//rotateX(PI / 4);
 	//rotateY(frameCount*0.01);
