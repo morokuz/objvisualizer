@@ -13,6 +13,8 @@ function setup() {
 	xPrec = 0;
 	yPrec = 0;
 
+	model3d = loadModel("assets/DropIt!.obj", true);
+
 	noStroke();
 	textSize(100);
 	textAlign(CENTER);
@@ -20,7 +22,7 @@ function setup() {
 
 function draw() {
 	background(40);
-	if (model3d) {
+	
 		scale(2);
 
 		if (mouseIsPressed) {
@@ -47,7 +49,7 @@ function draw() {
 
 		directionalLight(250, 250, 250, 0, 0, -1);
 		model(model3d);
-	}
+	
 }
 
 function handleFile(file) {
