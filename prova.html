@@ -11,12 +11,15 @@
     body {
       margin: 0;
     } 
+    input{
+      display:block;
+    }
   </style>
 </head>
 <body>
   carica il tuo file obj
   <input id="object" type="file"></input>
-  <button onclick="visualizer()">visualizza</button>
+  <button onclick="visualizer(document.getElementById('object').value)">visualizza</button>
 </form>
 </body>
 </html>
