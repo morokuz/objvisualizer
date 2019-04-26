@@ -1,5 +1,5 @@
 
-function visualizer(){
+//function visualizer(){
 let squircle;
 let xPrec;
 let yPrec;
@@ -50,4 +50,4 @@ function draw(){
 	model(squircle);
 	//sphere(400);
 }
-}
+//}
