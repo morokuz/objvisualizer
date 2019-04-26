@@ -8,7 +8,7 @@ function setup() {
 	let c = createCanvas(windowWidth, windowHeight, WEBGL);
 	c.drop(handleFile);
 
-	xRot = 0;
+	xRot = - PI / 2;
 	yRot = 0;
 	xPrec = 0;
 	yPrec = 0;
@@ -54,4 +54,6 @@ function draw() {
 
 function handleFile(file) {
 	model3d = loadModel(file.data, true);
+	xRot = 0;
+	yRot = 0;
 }
