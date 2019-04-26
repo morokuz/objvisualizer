@@ -6,7 +6,7 @@ let yRot;
 let delta;
 
 function preload(){
-	squircle=loadModel("objvisualizer/assets/untitled.obj", true);
+	squircle=loadModel("assets/untitled.obj", true);
 }
 
 function setup(){
