@@ -1,3 +1,4 @@
+
 let model3d;
 let xPrec, yPrec, xRot, yRot, delta;
 let input;
