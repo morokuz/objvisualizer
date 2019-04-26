@@ -26,7 +26,7 @@ function draw(){
 	scale(2);
 	//rotateX(PI / 4);
 	//rotateY(frameCount*0.01);
-	console.log(document.getElementById("object").value);
+	//console.log(document.getElementById("object").value);
 	if (mouseIsPressed) {
 		if ((mouseX - xPrec) > 0) {
 			delta = map((mouseX - xPrec), 0, width / 2, 0, 2 * PI)
