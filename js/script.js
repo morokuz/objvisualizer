@@ -19,7 +19,7 @@ function setup(){
 
 
 function draw(){
-	background(200);
+	background(40);
 	scale(2);
 	//rotateX(PI / 4);
 	//rotateY(frameCount*0.01);
