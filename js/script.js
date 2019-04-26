@@ -7,17 +7,16 @@ function setup() {
 	//input = createFileInput(handleFile);
 	let c = createCanvas(windowWidth, windowHeight, WEBGL);
 	c.drop(handleFile);
-	
+
 	xRot = 0;
 	yRot = 0;
 	xPrec = 0;
 	yPrec = 0;
-	
+
 	noStroke();
 	textSize(100);
 	textAlign(CENTER);
 }
-
 
 function draw() {
 	background(40);
