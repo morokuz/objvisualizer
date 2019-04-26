@@ -6,7 +6,7 @@ let yRot;
 let delta;
 
 function preload(){
-	squircle=loadModel("https://tgiulio.github.io/objvisualizer/assets/untitled.obj", true);
+	squircle=loadModel("objvisualizer/assets/untitled.obj", true);
 }
 
 function setup(){
