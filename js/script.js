@@ -1,5 +1,6 @@
 
 //function visualizer(){
+
 let squircle;
 let xPrec;
 let yPrec;
@@ -8,7 +9,7 @@ let yRot;
 let delta;
 
 function preload(){
-	squircle=loadModel(document.getElementById("object").value, true);
+	squircle=loadModel("assets/untitled.obj", true);
 }
 
 function setup(){
@@ -25,7 +26,7 @@ function draw(){
 	scale(2);
 	//rotateX(PI / 4);
 	//rotateY(frameCount*0.01);
-	
+	console.log(document.getElementById("object").value);
 	if (mouseIsPressed) {
 		if ((mouseX - xPrec) > 0) {
 			delta = map((mouseX - xPrec), 0, width / 2, 0, 2 * PI)
