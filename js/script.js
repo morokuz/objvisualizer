@@ -1,29 +1,26 @@
-let squircle;
-let xPrec;
-let yPrec;
-let xRot;
-let yRot;
-let delta;
+let model3d;
+let xPrec, yPrec, xRot, yRot, delta;
 
-function preload(){
-	squircle=loadModel("assets/untitled.obj", true);
+function preload() {
+	model3d = loadModel("assets/monkey.obj", true);
 }
 
-function setup(){
+function setup() {
 	createCanvas(windowWidth, windowHeight, WEBGL);
+
 	xRot = 0;
 	yRot = 0;
 	xPrec = 0;
 	yPrec = 0;
+
+	noStroke();
 }
 
 
-function draw(){
+function draw() {
 	background(40);
 	scale(2);
-	//rotateX(PI / 4);
-	//rotateY(frameCount*0.01);
-	
+
 	if (mouseIsPressed) {
 		if ((mouseX - xPrec) > 0) {
 			delta = map((mouseX - xPrec), 0, width / 2, 0, 2 * PI)
@@ -36,7 +33,7 @@ function draw(){
 			delta = map((mouseY - yPrec), 0, height / 2, 0, 2 * PI)
 			xRot -= delta;
 		} else if ((mouseY - yPrec) < 0) {
-			delta = map((mouseY - yPrec), -height / 2,0, 2 * PI, 0)
+			delta = map((mouseY - yPrec), -height / 2, 0, 2 * PI, 0)
 			xRot += delta;
 		}
 	}
@@ -44,7 +41,8 @@ function draw(){
 	yPrec = mouseY;
 	rotateX(xRot);
 	rotateY(yRot);
-	
-	model(squircle);
-	//sphere(400);
+
+
+	directionalLight(250, 250, 250, 0, 0, -1);
+	model(model3d);
 }
