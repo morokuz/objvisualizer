@@ -1,5 +1,6 @@
-preventDefault();
+
 function visualizer(){
+	preventDefault();
 let squircle;
 let xPrec;
 let yPrec;
